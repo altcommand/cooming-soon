@@ -880,11 +880,11 @@ section {
 .cta {
   background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../img/cta-bg.jpg") fixed center center;
   background-size: cover;
-  padding: 120px 0;
+  padding: 80px 0;
 }
 
 .cta h3 {
-  color: #fff;
+  color: #FF9900;
   font-size: 28px;
   font-weight: 700;
 }
@@ -903,13 +903,14 @@ section {
   border-radius: 50px;
   transition: 0.5s;
   margin: 10px;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid #2bccff;
+  color: #2bccff;
 }
 
 .cta .cta-btn:hover {
   background: #37517e;
   border: 2px solid #37517e;
+  color: #fff;
 }
 
 @media (max-width: 1024px) {
@@ -1419,7 +1420,7 @@ section {
 
 .contact .info h4 {
   padding: 0 0 0 60px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 5px;
   color: #37517e;
@@ -1427,8 +1428,8 @@ section {
 
 .contact .info p {
   padding: 0 0 10px 60px;
-  margin-bottom: 20px;
-  font-size: 14px;
+  margin-bottom: 0;
+  font-size: 18px;
   color: #6182ba;
 }
 
