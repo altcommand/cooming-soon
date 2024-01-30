@@ -27,6 +27,11 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    .bp-widget-web {
+      max-height: 90vh;
+    }
+  </style>
 </head>
 
 <body>
@@ -605,7 +610,38 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+  <script>
+    window.botpressWebChat.init({
+      "composerPlaceholder": "Chat with AltCommand",
+      "botConversationDescription": "Ease Your Mind Through Digitalization",
+      "botId": "e000bb9a-13bd-4ddf-a45e-e67e06d3d443",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "e000bb9a-13bd-4ddf-a45e-e67e06d3d443",
+      "webhookId": "3dfb96ee-0df1-4992-b997-bf8217c87bbe",
+      "lazySocket": true,
+      "themeName": "prism",
+      "botName": "AltCommand",
+      "avatarUrl": "https://altcommand.id/assets/img/logo-dark.png",
+      "frontendVersion": "v1",
+      "theme": "prism",
+      "themeColor": "#FF9900",
+      "hideWidget": false,
+      "disableAnimations": true,
+      "closeOnEscape": false,
+      "showConversationsButton": true,
+      "enableTranscriptDownload": false,
+      "className": "webchatIframe",
+      "containerWidth": "100%25",
+      "layoutWidth": "100%25",
+      "showCloseButton": true,
+      "stylesheet": "https://altcommand.id/assets/css/chatwidget.css"
+  });
+  window.botpressWebChat.onEvent(function () { 
+    window.botpressWebChat.sendEvent({ type: 'show' }) 
+  }, ['LIFECYCLE.LOADED']);
+  </script>
 </body>
 
 </html>
