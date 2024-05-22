@@ -5,6 +5,8 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+let isChatWidgetShow = false;
 (function() {
   "use strict";
 
@@ -97,7 +99,7 @@
   let backtotop = select('.back-to-top')
   if (backtotop) {
     const toggleBacktotop = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 100 && !isChatWidgetShow) {
         backtotop.classList.add('active')
       } else {
         backtotop.classList.remove('active')
